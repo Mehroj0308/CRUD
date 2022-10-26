@@ -6,10 +6,11 @@ import Table from './componets/Table'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js'
 import {BrowserRouter ,Routes , Route} from 'react-router-dom'
-
+import { ToastContainer } from 'react-toastify';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <ToastContainer position='top-center' limit={3}/>
     <BrowserRouter>
       <Routes>
         <Route index element={<App/>}/>
